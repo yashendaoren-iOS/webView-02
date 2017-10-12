@@ -1,0 +1,68 @@
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style.css" rel="stylesheet">
+            <script>
+<!--                window.onload = function(){-->
+<!--                    var imageArray = document.getElementsByTagName("img");-->
+<!--                    for(var i=0; i < imageArray.length; i++){-->
+<!--                        var image = imageArray[i];-->
+<!--                        image.index = i;-->
+<!--                        image.onclick = function(){-->
+<!--                            window.webkit.messageHandlers.openBigPicture.postMessage({methodName:"openBigPicture:",imageSrc:imageArray[this.index].src});-->
+<!--                        }-->
+<!--                    }-->
+<!--                    var videoArray = document.getElementsByTagName("video");-->
+<!--                    for(var i=0; i < videoArray.length; i++){-->
+<!--                        var myVideo = videoArray[i];-->
+<!--                        myVideo.index = i;-->
+<!--                        var button = document.getElementsByClassName("button01")[i];-->
+<!--                        button.index = i;-->
+<!--                        button.onclick = function(){-->
+<!--                            window.webkit.messageHandlers.openVideoPlayer.postMessage({methodName:"openVideoPlayer:",videoSrc:videoArray[this.index].src});-->
+<!--                        }-->
+<!--                    }-->
+<!--                }-->
+<!--            window.onscroll= function(){-->
+<!--                var videoArray = document.getElementsByTagName("video");-->
+<!--                var video=videoArray[0];-->
+<!--                var videoY=video.offsetTop;//video距离顶部的距离-->
+<!--                var videoHeight=video.clientHeight;//video自身的高度-->
+<!--                -->
+<!--                var scrollTop = window.pageYOffset|| document.documentElement.scrollTop || document.body.scrollTop; //webview已经的滚动高度-->
+<!--                // var didScrollHeight=document.documentElement.scrollTop;//-->
+<!--                if (videoY+videoHeight<=scrollTop) {-->
+<!--                    // alert("视频已经看不见了");-->
+<!--                    -->
+<!--                    //此处调用本地方法 让它在window上播放-->
+<!--                    -->
+<!--                    -->
+<!--                }else{-->
+<!--                    // alert("视频还能看见");-->
+<!--                    -->
+<!--                    //此处调用本地方法 让它在webview上播放-->
+<!--                };-->
+<!---->
+<!--                window.webkit.messageHandlers.didscrollTo.postMessage({methodName:"didscrollTo:",str:"11");-->
+<!---->
+<!---->
+<!--            }-->
+
+            </script>
+        </link>
+    </head>
+    <body>
+        <div id='container' name="container">
+            <div class="title">{{ title }}</div>
+            <style>
+                p{ padding:1px}
+                /* css注释： 设置 设置行间距 padding为上下10px,  */
+            </style>
+            <div class="date">{{ date }} {{ source }}</div>
+            <div class="details">{{ details }}</div>
+            <div class="author_name">{{ author_name }}</div>
+        </div>
+    </body>
+</html>

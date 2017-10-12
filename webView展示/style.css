@@ -1,0 +1,75 @@
+<style>
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color: #444333;
+    background: #fbfbfb;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-transition: all 0.2s linear;
+}
+
+/* 标题居左，字号20，加粗 居顶部距离*/
+.title {
+    font-size:20px!important;
+    text-align:left;
+    margin-top:-0px;
+}
+
+/*  时间字号13 居顶部 5px  距底部8px*/
+.date {
+    font-size:12px;
+    color:#9D9D9D;
+    margin-top:5px;
+    margin-bottom:8px;
+}
+
+/* 内容字号15 */
+.details {
+/*    font-size:17px!important;*/
+    color:#000000;
+    padding-left:-45px;
+    padding-right:-45px;
+    text-align:justify;
+    text-justify:inter-ideograph;
+/*    line-height:25px;*/
+}
+
+.author_name{
+    font-size:14px;
+    color:#9D9D9D;
+    margin-top: 0%;
+    text-align:right;
+}
+
+/*  图片适应屏幕大小 （!important 优先级最高） */
+img, object {
+    max-width: 100% !important;
+    -webkit-interpolation-mode: bicubic;
+}
+
+video, object {
+    max-width: 100% !important;
+    z-index:-1;
+}
+/*  视频点击按钮   透明色 */
+.button01{
+    display:inline-block;
+    background-color:transparent
+/*    background:#00ffff;*/
+    border: 1px solid  #00ffff;
+    color:#00ffff;
+    border-radius: 50%;
+    
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    /* 绝对定位 */
+    position:absolute;
+/*    height: 200;*/
+    width: 50%;
+    margin-left: 25%;
+/*    margin-top:-250;*/
+    z-index:1;
+}
+
+</style>

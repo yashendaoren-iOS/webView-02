@@ -1,0 +1,51 @@
+<style>
+@charset "utf-8";
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+    color: #444333;
+    background: #fbfbfb;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-transition: all 0.2s linear;
+}
+
+/* 标题居左，字号20，加粗 居顶部距离*/
+.title {
+    font-size:20px!important;
+    text-align:left;
+    margin-top:-0px;
+}
+
+/*  时间字号13 */
+.date {
+    font-size:12px;
+    color:#9D9D9D;
+}
+
+/* 内容字号15 */
+.details {
+    font-size:17px!important;
+    color:#000000;
+    padding-left:-45px;
+    padding-right:-45px;
+    text-align:justify;
+    text-justify:inter-ideograph;
+    line-height:25px;
+}
+.author_name{
+    font-size:13px;
+    color:#9D9D9D;
+    text-align:right;
+}
+
+/*  图片适应屏幕大小 （!important 优先级最高） */
+img, object {
+    max-width: 100% !important;
+    -webkit-interpolation-mode: bicubic;
+}
+
+video, object {
+    max-width: 100% !important;
+}
+</style>
